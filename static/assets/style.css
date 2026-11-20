@@ -172,6 +172,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .inline-form input::placeholder{color:#A8A49B}
 .inline-form input:focus{outline:none;border-color:var(--gold)}
 .inline-form .btn{padding:0 28px;font-size:12px}
+.inline-form{flex-wrap:wrap}.inline-form .chk{flex:0 0 100%;margin-top:16px;color:#C9C4B9;font-size:13px}.inline-form .chk input{width:18px;height:18px;padding:0;border:0;accent-color:var(--gold)}
 @media (max-width:860px){.ebook{grid-template-columns:1fr}}
 
 /* about */
