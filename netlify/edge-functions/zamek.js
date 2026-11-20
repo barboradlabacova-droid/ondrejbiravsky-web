@@ -3,13 +3,14 @@
 // Když proměnná není nastavená, web je normálně veřejný.
 // Při spuštění ostrého webu tento soubor smažte, ať se zbytečně nevolá.
 export default async (request, context) => {
-  const heslo = Netlify.env.get("NAHLED_HESLO");
+  const heslo = (Netlify.env.get("NAHLED_HESLO") || "").trim();
   if (!heslo) return context.next();
   const auth = request.headers.get("authorization") || "";
   if (auth.startsWith("Basic ")) {
     try {
-      const [, zadane] = atob(auth.slice(6)).split(/:(.*)/s);
-      if (zadane === heslo) {
+      const [jmeno = "", zadane = ""] = atob(auth.slice(6)).split(/:(.*)/s);
+      // heslo stačí napsat do kteréhokoli pole (jméno i heslo)
+      if (zadane.trim() === heslo || jmeno.trim() === heslo) {
         const res = await context.next();
         res.headers.set("X-Robots-Tag", "noindex, nofollow");
         return res;
