@@ -1,0 +1,55 @@
+# Měsíční záloha celého webu (kód, texty, fotky, e-book) jako ZIP.
+# Záloha se uloží do „Releases“ repozitáře a pokud jsou nastavené údaje k e-mailu,
+# přijde Ondřejovi e-mail s odkazem ke stažení.
+name: Měsíční záloha webu
+
+on:
+  schedule:
+    - cron: '17 6 1 * *'   # 1. den v měsíci ráno
+  workflow_dispatch: {}     # ruční spuštění tlačítkem „Run workflow“
+
+permissions:
+  contents: write
+
+jobs:
+  zaloha:
+    runs-on: ubuntu-latest
+    env:
+      SMTP_USER: ${{ secrets.SMTP_USER }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Připravit ZIP
+        id: zip
+        run: |
+          DATUM=$(date +%Y-%m)
+          echo "datum=$DATUM" >> "$GITHUB_OUTPUT"
+          zip -qr "web-ondrejbiravsky-$DATUM.zip" . -x ".git/*"
+
+      - name: Uložit zálohu do Releases
+        id: release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: zaloha-${{ steps.zip.outputs.datum }}
+          name: Záloha webu ${{ steps.zip.outputs.datum }}
+          body: Kompletní záloha webu ondrejbiravsky.cz (kód, texty, fotky, e-book). Stačí rozbalit a nahrát na jakýkoli hosting, sestavení příkazem python3 build.py.
+          files: web-ondrejbiravsky-${{ steps.zip.outputs.datum }}.zip
+
+      - name: Poslat e-mail se zálohou
+        if: ${{ env.SMTP_USER != '' }}
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USER }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          from: Web ondrejbiravsky.cz <${{ secrets.SMTP_USER }}>
+          to: ${{ secrets.ZALOHA_PRIJEMCE }}
+          subject: Záloha webu ${{ steps.zip.outputs.datum }}
+          body: |
+            Dobrý den,
+
+            tady je měsíční záloha celého webu ondrejbiravsky.cz (kód, texty, fotky i e-book):
+            ${{ steps.release.outputs.url }}
+
+            Soubor si stačí stáhnout a uložit. Kdyby se s webem cokoli stalo, dá se z něj kdykoli obnovit.

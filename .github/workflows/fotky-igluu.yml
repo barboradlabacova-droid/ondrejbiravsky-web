@@ -1,0 +1,40 @@
+# Stáhne fotky z Igluu do webu, aby nezmizely, až je Igluu po prodeji smaže.
+name: Fotky z Igluu
+
+on:
+  push:
+    branches: [main]
+    paths: ['content/igluu.json']
+  schedule:
+    - cron: '23 4 * * 1'   # každé pondělí ráno
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fotky-igluu
+  cancel-in-progress: false
+
+jobs:
+  stahnout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install Pillow==11.3.0
+      - run: python scripts/stahni_fotky_igluu.py
+      - name: Uložit nové fotky
+        run: |
+          git add static/assets/img/igluu
+          if git diff --cached --quiet; then
+            echo "Žádné nové fotky."
+          else
+            git config user.name "Fotky Igluu (automat)"
+            git config user.email "actions@users.noreply.github.com"
+            git commit -m "Fotky z Igluu: stažení nových fotek"
+            git pull --rebase
+            git push
+          fi

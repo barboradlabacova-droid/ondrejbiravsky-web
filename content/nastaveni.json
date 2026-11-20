@@ -1,0 +1,84 @@
+{
+ "telefon": "703 474 137",
+ "email": "ondrej.biravsky@century21.cz",
+ "whatsapp": "420703474137",
+ "kancelar": "CENTURY 21 Dream, Veveří 2581/102, Brno",
+ "facebook": "https://www.facebook.com/152513005455578",
+ "youtube": "https://www.youtube.com/@obiravsky",
+ "linkedin": "https://www.linkedin.com/in/ond%C5%99ej-biravsk%C3%BD-6625b28b/",
+ "x": "https://x.com/obiravsky",
+ "cisla": [
+  {
+   "hodnota": "143",
+   "jednotka": "",
+   "popis": "prodaných nemovitostí"
+  },
+  {
+   "hodnota": "500",
+   "jednotka": "mil. Kč",
+   "popis": "v uzavřených obchodech"
+  },
+  {
+   "hodnota": "2–3",
+   "jednotka": "měs.",
+   "popis": "průměrná doba prodeje"
+  },
+  {
+   "hodnota": "4,9",
+   "jednotka": "",
+   "popis": "hodnocení na Googlu"
+  }
+ ],
+ "google_hodnoceni": "4,9",
+ "google_pocet": "36",
+ "nejvetsi_obchod": "17 653 000 Kč",
+ "tym": [
+  "Michaela Nistorová",
+  "Vendula Hudcová",
+  "Jan Brožek"
+ ],
+ "oceneni": [
+  {
+   "misto": 2,
+   "mesic": "leden",
+   "rok": "2026",
+   "kategorie": "Makléř Měsíce"
+  },
+  {
+   "misto": 2,
+   "mesic": "leden",
+   "rok": "2026",
+   "kategorie": "Makléř Master"
+  },
+  {
+   "misto": 1,
+   "mesic": "květen",
+   "rok": "2024",
+   "kategorie": "Makléř Měsíce"
+  },
+  {
+   "misto": 1,
+   "mesic": "květen",
+   "rok": "2024",
+   "kategorie": "Makléř Master"
+  },
+  {
+   "misto": 1,
+   "mesic": "duben",
+   "rok": "2020",
+   "kategorie": "Makléř Senior"
+  },
+  {
+   "misto": 4,
+   "mesic": "červenec",
+   "rok": "2019",
+   "kategorie": "Makléř Senior"
+  },
+  {
+   "misto": 3,
+   "mesic": "květen",
+   "rok": "2019",
+   "kategorie": "Makléř Senior"
+  }
+ ]
+}

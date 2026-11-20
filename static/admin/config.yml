@@ -1,0 +1,134 @@
+# Administrace webu ondrejbiravsky.cz (Decap CMS)
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: 'Nový obsah: {{collection}} „{{slug}}“'
+    update: 'Úprava: {{collection}} „{{slug}}“'
+    delete: 'Smazáno: {{collection}} „{{slug}}“'
+    uploadMedia: 'Nahrána fotka „{{path}}“'
+    deleteMedia: 'Smazána fotka „{{path}}“'
+
+# pro testování na vlastním počítači (npx decap-server), na webu se nepoužije
+local_backend: true
+
+locale: cs
+publish_mode: simple
+site_url: https://ondrejbiravsky.cz
+display_url: https://ondrejbiravsky.cz
+logo_url: /assets/img/ondrej-avatar.jpg
+
+media_folder: static/assets/img/uploads
+public_folder: /assets/img/uploads
+
+collections:
+  - name: clanky
+    label: Články
+    label_singular: Článek
+    description: Analýzy trhu a rady pro prodávající. Nový článek se po uložení objeví na webu zhruba do minuty.
+    folder: content/clanky
+    create: true
+    slug: '{{slug}}'
+    extension: md
+    format: frontmatter
+    sortable_fields: [date, title]
+    summary: '{{date}} · {{title}}'
+    fields:
+      - {label: Nadpis, name: title, widget: string}
+      - {label: Datum, name: date, widget: datetime, format: 'YYYY-MM-DD', date_format: 'D. M. YYYY', time_format: false}
+      - {label: Hlavní obrázek, name: image, widget: image, required: false, hint: 'Ideálně na šířku, aspoň 1200 px.'}
+      - {label: Perex (krátké shrnutí do 2 vět), name: perex, widget: text}
+      - {label: Text článku, name: body, widget: markdown, buttons: [bold, italic, link, heading-two, heading-three, quote, bulleted-list, numbered-list], editor_components: [image]}
+      - label: Zobrazit na úvodní stránce
+        name: na_uvodu
+        widget: boolean
+        default: false
+        hint: 'Na úvodu se ukazují 3 nejnovější zaškrtnuté články.'
+      - {label: Velké číslo na úvodu (např. 54 %), name: velke_cislo, widget: string, required: false}
+      - {label: Krátký nadpis na úvodu, name: uvod_nadpis, widget: string, required: false}
+      - {label: Věta pod nadpisem na úvodu, name: uvod_text, widget: string, required: false}
+      - {label: Skrýt článek (koncept), name: skryt, widget: boolean, default: false, required: false}
+
+  - name: obsah
+    label: Obsah webu
+    files:
+      - name: reference
+        label: Reference
+        file: content/reference.json
+        format: json
+        fields:
+          - label: Reference
+            name: polozky
+            widget: list
+            summary: '{{fields.jmeno}}'
+            add_to_top: true
+            label_singular: referenci
+            fields:
+              - {label: Text reference, name: text, widget: text}
+              - {label: 'Jméno, místo a rok', name: jmeno, widget: string, hint: 'Např. Jan Novák, Brno 2026'}
+              - {label: Odkaz na videoreferenci (YouTube), name: video, widget: string, required: false}
+              - {label: Zobrazit na úvodní stránce, name: na_uvodu, widget: boolean, default: false, required: false, hint: 'Na úvodu jsou 2 textové reference a 1 videoreference.'}
+              - {label: Zkrácená verze pro úvod, name: kratka_verze, widget: text, required: false}
+
+      - name: prodane
+        label: Prodané nemovitosti
+        file: content/prodane.json
+        format: json
+        fields:
+          - label: Prodané nemovitosti
+            name: polozky
+            widget: list
+            summary: '{{fields.nazev}} · {{fields.stav}}'
+            add_to_top: true
+            label_singular: nemovitost
+            hint: 'Nedávné obchody z Igluu se na web přidávají samy. Sem patří starší nebo zajímavé případy.'
+            fields:
+              - {label: Název, name: nazev, widget: string}
+              - {label: Krátký popis, name: popis, widget: text, required: false}
+              - {label: Fotka, name: foto, widget: image, required: false}
+              - {label: 'Stav (např. Prodáno, Prodáno za 22 dní, Pronajato)', name: stav, widget: string, default: Prodáno}
+              - {label: Typ, name: typ, widget: select, options: [Byty, Domy, Pozemky, Komerce a ostatní], default: Byty}
+
+      - name: o-mne
+        label: O mně
+        file: content/o-mne.md
+        format: frontmatter
+        fields:
+          - {label: Nadpis stránky, name: nadpis, widget: string}
+          - {label: Text, name: body, widget: markdown, buttons: [bold, italic, link, heading-two, quote, bulleted-list]}
+
+      - name: nastaveni
+        label: Kontakty, čísla a ocenění
+        file: content/nastaveni.json
+        format: json
+        fields:
+          - {label: Telefon, name: telefon, widget: string, hint: 'Ve tvaru 703 474 137'}
+          - {label: E-mail, name: email, widget: string}
+          - {label: 'WhatsApp (číslo s předvolbou bez +)', name: whatsapp, widget: string, hint: 'Např. 420703474137'}
+          - {label: Kancelář, name: kancelar, widget: string}
+          - {label: Facebook, name: facebook, widget: string, required: false}
+          - {label: YouTube, name: youtube, widget: string, required: false}
+          - {label: LinkedIn, name: linkedin, widget: string, required: false}
+          - {label: X, name: x, widget: string, required: false}
+          - label: Čísla na úvodu
+            name: cisla
+            widget: list
+            summary: '{{fields.hodnota}} {{fields.jednotka}} · {{fields.popis}}'
+            fields:
+              - {label: Hodnota, name: hodnota, widget: string}
+              - {label: Jednotka (nepovinné), name: jednotka, widget: string, required: false}
+              - {label: Popis, name: popis, widget: string}
+          - {label: Hodnocení na Googlu, name: google_hodnoceni, widget: string}
+          - {label: Počet hodnocení na Googlu, name: google_pocet, widget: string}
+          - {label: Největší obchod, name: nejvetsi_obchod, widget: string}
+          - {label: Tým, name: tym, widget: list, field: {label: Jméno, name: jmeno, widget: string}}
+          - label: Ocenění
+            name: oceneni
+            widget: list
+            add_to_top: true
+            summary: '{{fields.misto}}. místo · {{fields.kategorie}} · {{fields.mesic}} {{fields.rok}}'
+            fields:
+              - {label: Místo, name: misto, widget: number, value_type: int}
+              - {label: Kategorie, name: kategorie, widget: string, hint: 'Např. Makléř Master'}
+              - {label: Měsíc, name: mesic, widget: string, hint: 'Např. leden'}
+              - {label: Rok, name: rok, widget: string}

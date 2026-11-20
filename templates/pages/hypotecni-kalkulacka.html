@@ -1,0 +1,13 @@
+<!--title:Hypoteční kalkulačka | Ondřej Biravský-->
+<!--desc:Spočítejte si splátku hypotéky, výši úvěru, LTV a kolik zaplatíte na úrocích. Včetně limitů ČNB pro vlastní bydlení i investiční hypotéky.-->
+<!--noindex:0-->
+<!--mainclass:-->
+<div class="wrap"><div class="phead"><span class="crumb"><a href="/">Úvod</a> / Hypoteční kalkulačka</span><span class="lbl">Nástroje</span><h1 class="h1">Hypoteční <span class="gold-d">kalkulačka</span></h1><p class="lead">Orientační výpočet splátky. Sazbu si upravte podle aktuální nabídky banky.</p></div></div><div class="wrap" style="padding-bottom:var(--sec)"><div class="calc" id="hypo"><form class="form calc-in" onsubmit="return false">
+<label class="fld"><span class="lbl">Cena nemovitosti (Kč)</span><input name="cena" inputmode="numeric" value="5 000 000"></label>
+<label class="fld"><span class="lbl">Vlastní zdroje (Kč)</span><input name="vlastni" inputmode="numeric" value="1 000 000"></label>
+<div class="fgrid"><label class="fld"><span class="lbl">Úroková sazba (% p. a.)</span><input name="sazba" inputmode="decimal" value="4,5"></label><label class="fld"><span class="lbl">Doba splácení (let)</span><input name="roky" inputmode="numeric" value="30"></label></div>
+<fieldset class="chips" style="grid-template-columns:repeat(2,minmax(0,1fr))"><legend class="lbl">Účel</legend><label><input type="radio" name="ucel" value="vlastni" checked><span>Vlastní bydlení</span></label><label><input type="radio" name="ucel" value="invest"><span>Investice</span></label></fieldset>
+<label class="chk"><input type="checkbox" name="mlady"><span>Žadatel je mladší 36 let</span></label></form>
+<div class="calc-out dark"><span class="lbl">Měsíční splátka</span><b class="big" data-o="splatka">–</b><dl><div><dt>Výše úvěru</dt><dd data-o="uver">–</dd></div><div><dt>LTV</dt><dd data-o="ltv">–</dd></div><div><dt>Zaplatíte celkem</dt><dd data-o="celkem">–</dd></div><div><dt>Z toho úroky</dt><dd data-o="uroky">–</dd></div></dl><p class="warn" data-o="warn" hidden></p>
+<a class="btn btn-gold" href="/#kontakt" data-topic="Koupě">Pomoc s financováním</a></div></div>
+<p class="note2" style="max-width:760px;margin-top:24px;color:var(--muted);font-size:14px">Výpočet je orientační (anuitní splácení, bez poplatků a pojištění). Limity LTV podle doporučení ČNB: 80 % pro vlastní bydlení, 90 % pro žadatele do 36 let, 70 % pro investiční hypotéky.</p></div><section class="dark cta-band"><div class="wrap"><h2 class="h2">Pojďme na kávu. <span class="gold">Rozebereme Váš případ.</span></h2><div class="actions"><a class="btn btn-gold" href="/#kontakt">Domluvit konzultaci zdarma</a><a class="ulink" href="tel:{{TEL_HREF}}" data-ev="click_phone">{{TEL}}</a></div></div></section>

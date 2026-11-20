@@ -1,0 +1,261 @@
+# Netlify: sestavení webu z obsahu (python3 build.py) do dist/
+[build]
+  command = "python3 build.py"
+  publish = "dist"
+
+[build.environment]
+  PYTHON_VERSION = "3.12"
+
+[[headers]]
+  for = "/assets/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+[[redirects]]
+  from = "/kontakt"
+  to = "/#kontakt"
+  status = 301
+
+[[redirects]]
+  from = "/aktualni-nemovitosti"
+  to = "/nabidka"
+  status = 301
+
+[[redirects]]
+  from = "/odhad-ceny-nemovitosti"
+  to = "/#kontakt"
+  status = 301
+
+[[redirects]]
+  from = "/rd-zbysov"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/byt-havlickova"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/byt-kurim"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/byt-palackeho-znojmo"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/vyroba-oblekovice"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/rd-mikulov"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/rd-hrotovice"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/rd-rasovice"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/rd-chrlice"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/byt-wagnerova"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/byt-mosnova"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/byt-tyrsova"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/byt-petrovice"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/byt-rotalova"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/byt-sumavska"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/pozemek-stavesice"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/byt-renneska"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/rd-brezi"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/bydleni-uvoz"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/pozemek-mozolov"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/byt-osecnice"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/byt-francouzska"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/byt-ripska"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/rd-bilovice"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/byt-trybova"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/byt-bohdalice"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/byt-kurim2"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/rd-petrovice"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/byt-holeckova"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/rd-lysovice"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/byt-rousinov1"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/rd-sentice-old"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/byt-rajhrad"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/rd-syrovice"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/kelleruv-mlyn"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/byt-komin-coupkovych"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/komerce-malomerice"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/cinzovni-dum-spalena"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+[[redirects]]
+  from = "/byt-breclav"
+  to = "/prodane-nemovitosti"
+  status = 301
+
+
+[[redirects]]
+  from = "/realitni-tipy"
+  to = "/clanky"
+  status = 301
+
+[[redirects]]
+  from = "/rd-petrovice-214"
+  to = "/nabidka/prodej-rodinneho-domu-4-kk-v-petrovicich-u-blanska-994639"
+  status = 301
+
+[[redirects]]
+  from = "/rd-babice"
+  to = "/nabidka/pronajem-krasneho-domu-110-m-pozemek-594-m-babice-u-rosic-988798"
+  status = 301
+
+[[redirects]]
+  from = "/byt-chudcicka"
+  to = "/prodane-nemovitosti"
+  status = 301

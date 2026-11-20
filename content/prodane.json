@@ -1,0 +1,438 @@
+{
+ "polozky": [
+  {
+   "nazev": "Byt Palackého",
+   "popis": "Luxusní byt podle arch. Heroldové. Prodáno za 2 dny.",
+   "foto": "/assets/img/prodano/byt-palackeho.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "RD Sentice",
+   "popis": "Tady jsme prodávali tento dům již podruhé, jelikož životní osudy jsou velmi často nevyzpytatelné. Klienti jsou nakonec spokojeni a novým majitelům přejeme hodně štěstí a pěkné bydlení.",
+   "foto": "/assets/img/prodano/rd-sentice.jpg",
+   "stav": "Prodáno",
+   "typ": "Domy"
+  },
+  {
+   "nazev": "RD Milotice",
+   "popis": "Bezproblémový případ prodeje krásného domu v unikatní lokalitě moravských Milotic.",
+   "foto": "/assets/img/prodano/rd-milotice.jpg",
+   "stav": "Prodáno",
+   "typ": "Domy"
+  },
+  {
+   "nazev": "Byt Werichova",
+   "popis": "Nadstandartní a luxusní byt v Praze na Barrandově. Tento kousek si naši péči skutečně zasloužil.",
+   "foto": "/assets/img/prodano/byt-werichova.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "Byt Mečislavova",
+   "popis": "Ani pražské bytové jednotky se nám nevyhýbají a zde došlo také k úspěšnému prodeji.",
+   "foto": "/assets/img/prodano/byt-mecislavova.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "RD Rebešovická",
+   "popis": "Pěkný dům a pěkné bydlení.",
+   "foto": "/assets/img/prodano/rd-rebesovicka.jpg",
+   "stav": "Prodáno",
+   "typ": "Domy"
+  },
+  {
+   "nazev": "Byt Kounice",
+   "popis": "Rozdělením bytu na dvě jednotky došlo k prodeji který byl drobně netypický. Ale všichni byli nakonec moc spokojeni. Prodávající je přestěhovaný do svého vysněného domu a kupující zde pronajímá úspěšně a v bytě jsou spokojení nájemci.",
+   "foto": "/assets/img/prodano/byt-kounice.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "Byt Břeclav Na Valtické",
+   "popis": "Hezký byt s výhledy a se skvělou dispozicí. Prodáno úspěšně.",
+   "foto": "/assets/img/prodano/byt-breclav-na-valticke.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "RD Zbraslav",
+   "popis": "Prodej se majitelům s předchozí Realitní kanceláři nedařil přes půl roku. Nám se podařilo najít kupující za 11 dní! Dům je opravdu na perfektním místě a má svoji unikátní atmosféru.",
+   "foto": "/assets/img/prodano/rd-zbraslav.jpg",
+   "stav": "Prodáno",
+   "typ": "Domy"
+  },
+  {
+   "nazev": "Byt Vrchlického",
+   "popis": "Byt byl nakonec úspěšně pronajat.",
+   "foto": "/assets/img/prodano/byt-vrchlickeho.jpg",
+   "stav": "Pronajato",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "RD Vítkov",
+   "popis": "Prodej domu 'šumperák' ve Vítkově. Prodáno úspěšně.",
+   "foto": "/assets/img/prodano/rd-vitkov.jpg",
+   "stav": "Prodáno",
+   "typ": "Domy"
+  },
+  {
+   "nazev": "RD Moutnice",
+   "popis": "Prodej domu před kolaudací a s veškerým standartem novostavby.",
+   "foto": "/assets/img/prodano/rd-moutnice.jpg",
+   "stav": "Prodáno",
+   "typ": "Domy"
+  },
+  {
+   "nazev": "Byt Komín",
+   "popis": "Prodej krásně zrekonstruovaného bytu, který navazoval na prodej dalšího bytu. Akce tzv. \"kulový blesk\".",
+   "foto": "/assets/img/prodano/byt-komin.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "Byt Břeclav",
+   "popis": "",
+   "foto": "/assets/img/prodano/byt-breclav.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "RD Rajhradská",
+   "popis": "Úspěšný prodej v návaznosti nákupu malého domu za Brnem pro prodávající byl trochu oříškem. Dům nebyl novostavbou, ale svým kouzlem uhranul srdce kupujících a už nyní se těší na krásný dům na ulici Rajhradská, Brno.",
+   "foto": "/assets/img/prodano/rd-rajhradska.jpg",
+   "stav": "Prodáno",
+   "typ": "Domy"
+  },
+  {
+   "nazev": "Byt Rousínov",
+   "popis": "Přání? Do konce června bychom rádi peníze na účtu. Výsledek? Peníze dorazily 28.6.2023 Prodáno za 2 týdny. Přání se neplní jen na Vánoce :-)",
+   "foto": "/assets/img/prodano/byt-rousinov.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "Byt Botanická",
+   "popis": "Prodáno úspěšně do týdne! Někdy je potřeba rychlost a někdy je potřeba splnit další požadavky majitelů na delší vystěhování. Zde jsme splnili vše!",
+   "foto": "/assets/img/prodano/byt-botanicka.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "Byt Černého",
+   "popis": "Úspěšný prodej s nájemníkem. Prodáno. Byt na ulici Černého, Brno.",
+   "foto": "/assets/img/prodano/byt-cerneho.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "Byt Mikulov",
+   "popis": "Prodáno úspěšně v návaznosti dalšího prodeje nemovitosti. Ano, tedy Akce Kulový blesk.",
+   "foto": "/assets/img/prodano/byt-mikulov.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "Byt Šámalova",
+   "popis": "Novostavba bytu na ulici Šámalova, Brno. Prodáno úspěšně novému majiteli.",
+   "foto": "/assets/img/prodano/byt-samalova.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "Byt Palackého",
+   "popis": "Co je malé, to je hezké. Prodáno v krátkém čase. Byt na ulici Palackého v Brně.",
+   "foto": "/assets/img/prodano/byt-palackeho-2.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "Byt Bayerova",
+   "popis": "Byt před rekonstrukcí na ulici Bayerova, Brno. Prodáno úspěšně i v období realitní krize.",
+   "foto": "/assets/img/prodano/byt-bayerova.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "Byt Tyršova",
+   "popis": "Bydlení bez kompromisů! To a navíc skvělá lokalita s perfektní dostupností do všech stran města Brna. Byt s dispozicí 2+1 o užitné ploše 63m2 (vč. sklepu 3m2).",
+   "foto": "/assets/img/prodano/byt-tyrsova.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "Byt Petrovice",
+   "popis": "Nádherně zrekonstruované bydlení nedaleko Moravského Krumlova. Byt o užitné ploše 77m2 (vč. sklepu 6m2 a lodžie 4m2) s dispozicí 3+1, a je v osobním vlastnictví.",
+   "foto": "/assets/img/prodano/byt-petrovice.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "Byt Mošnova",
+   "popis": "Všem, kdo hledají nadstandartní bydlení s terasou pro grilování, společné večery s výhledem do zahrady, musí zvýšit pozornost tato nemovitost, kterou jsme pro vás připravili do nabídky.Prémiová novostavba bytu 3kk v 1.NP v klidné lokalitě Brno-Židenice.",
+   "foto": "/assets/img/prodano/byt-mosnova.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "Byt Wágnerova",
+   "popis": "Bydlení v 2.podlaží novostavby bytového domu s výtahem (orientace oken obývacího pokoje do vnitrobloku západním směrem) se perfektně hodí pro pár nebo mladou rodinu, která již nechce nic rekonstruovat a rovnou bydlet. Skvělá dispozice 2+kk, všechny pokoje…",
+   "foto": "/assets/img/prodano/byt-wagnerova.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "Byt Rotalova",
+   "popis": "Luxusní, moderní, nový byt v Brně na ulici Rotalova. Bydlení v 1.patře (2.NP) novostavby bytového domu bez výtahu (orientace oken do vnitrobloku východním směrem) se perfektně hodí pro mladou rodinu, která již nechce nic rekonstruovat a rovnou bydlet.",
+   "foto": "/assets/img/prodano/byt-rotalova.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "Byt Šumavská",
+   "popis": "Krásně zrekonstruovaný byt v Brně na ulici Šumavská. Bydlení v 3.patře cihlového domu s veškerou občanskou vybaveností nabízí skvělý investiční potenciál = dobrá pronajímatelnost, ale je též vhodný pro mladou rodinu.",
+   "foto": "/assets/img/prodano/byt-sumavska.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "Pozemek Stavěšice",
+   "popis": "Podívejme se na vyjímečnou investiční příležitost. Vítejte v obci Stavěšice. Stavební pozemek rovného obdélníkového tvaru má výměru 467m2. Aktuální stavení na pozemku je určené k demolici a na jeho půdorysu je možné postavit krásný nový dům.",
+   "foto": "/assets/img/prodano/pozemek-stavesice.jpg",
+   "stav": "Prodáno",
+   "typ": "Pozemky"
+  },
+  {
+   "nazev": "Byt Renneská",
+   "popis": "Bydlení jako v rodinném domě v Brně! Bytový dům o dvou bytových jednotkách a nebytových prostorech v přízemí byl postavený začátkem minulého století.",
+   "foto": "/assets/img/prodano/byt-renneska.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "RD Březí",
+   "popis": "Úžasný dům, úchvatné bydlení Dvougenerační rodinný dům v Březí u Mikulova",
+   "foto": "/assets/img/prodano/rd-brezi.jpg",
+   "stav": "Prodáno",
+   "typ": "Domy"
+  },
+  {
+   "nazev": "Byt Francouzská",
+   "popis": "S navýšením ceny pro prodávajícího o 590.000,-Kč",
+   "foto": "/assets/img/prodano/byt-francouzska.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "1kk, Cejl, Brno",
+   "popis": "",
+   "foto": "/assets/img/prodano/1kk-cejl-brno.jpg",
+   "stav": "Pronajato",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "Byt Řípská",
+   "popis": "S navýšením ceny pro prodávajícího o 260.000,-Kč Jen a jen se nastěhovat anebo v jiném případě - koupit a ihned pronajmout. Ano. Takhle by se dala charakterizovat bytová jednotka v Brně ve Slatině, která vás tímto přímo vybízí ke koupi.",
+   "foto": "/assets/img/prodano/byt-ripska.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "RD Bílovice nad Svitavou",
+   "popis": "Cihlový dům pochází cca z roku 1860 a prošel částečnou rekonstrukcí v roce 2006/2007.Atmosféru a intimitu zahrady u domu podtrhuje orientace jihovýchodním směrem.",
+   "foto": "/assets/img/prodano/rd-bilovice-nad-svitavou.jpg",
+   "stav": "Prodáno",
+   "typ": "Domy"
+  },
+  {
+   "nazev": "Byt Trýbova",
+   "popis": "Prostorný obývací pokoj s kuchyní a ložnicí vybízí k pohodovému rodinnému bydlení a to i díky příjemnému vnitrobloku, ovšem pozor také lze využít ohromný potenciál této nemovitosti k investici (vysoké školy jsou zde velmi blízko).",
+   "foto": "/assets/img/prodano/byt-trybova.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "OP Údolní, Brno",
+   "popis": "Nebytové prostory k pronájmu v 1. podzemním podlaží historického domu blízko parku Obilní trh.Jak říká majitel: „Na prostředí, ve kterém žijeme nám záleží. Nájemníkům umožňujeme vstup do vzdělávací a komunitní zahrady a na zelenou střechu, které přímo…",
+   "foto": "/assets/img/prodano/op-udolni-brno.jpg",
+   "stav": "Pronajato",
+   "typ": "Komerce a ostatní"
+  },
+  {
+   "nazev": "2kk Bohdalice",
+   "popis": "Bohdalice-Pavlovice, Vyškov Poklidné bydlení pouze 25 minut autem na okraj Brna.",
+   "foto": "/assets/img/prodano/2kk-bohdalice.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "Byt Kuřim",
+   "popis": "Dovolujeme si vám ve výhradním zastoupení majitele nabídnout byt o dispozici 3+kk v Kuřimi. Byt o podlahové ploše 72m2 + lodžie 4,8m2 byl rekonstruován v roce 2014 a je v osobním vlastnictví.",
+   "foto": "/assets/img/prodano/byt-kurim.jpg",
+   "stav": "Prodáno za 22 dní",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "RD Lysovice",
+   "popis": "Napadlo Vás někdy, že byste si koupili pozemek, kde jsou inženýrské sítě nachystané, terénní práce na pozemku i hrubá stavba hotová? Napadlo Vás někdy, že byste již měli veškerou stavební i projektovou dokumentaci nachystanou a stačilo by dům pouze dostavět?…",
+   "foto": "/assets/img/prodano/rd-lysovice.jpg",
+   "stav": "Prodáno",
+   "typ": "Domy"
+  },
+  {
+   "nazev": "Pozemek Komín",
+   "popis": "Prodej pozemku v Brně Komíně.Podle územního plánu není zatím pozemek určen k výstavbě.",
+   "foto": "/assets/img/prodano/pozemek-komin.jpg",
+   "stav": "Prodáno",
+   "typ": "Pozemky"
+  },
+  {
+   "nazev": "RD Petrovice",
+   "popis": "Rádi byste se nastěhovali do nového, krásného a moderního rodinného domu? Ovšem. Když už se nastěhovat do domu, tak byste neradi běhali po schodech ve dvou, třech patrech a \"život na schodech\" vás neláká? Ve výhradním zastoupení vám nabízíme ke koupi…",
+   "foto": "/assets/img/prodano/rd-petrovice.jpg",
+   "stav": "Prodáno za 31 dní",
+   "typ": "Domy"
+  },
+  {
+   "nazev": "podíl 1/32 ČD Spálená, PRAHA 1",
+   "popis": "Ve výhradním zastoupení nabízíme k prodeji podíl o velikosti 1/32 na vlastnictví řadového činžovního domu přímo v centru Prahy na ulici Spálené.",
+   "foto": "/assets/img/prodano/podil-1-32-cd-spalena-praha-1.jpg",
+   "stav": "Prodáno",
+   "typ": "Komerce a ostatní"
+  },
+  {
+   "nazev": "3+kk, Rousínov",
+   "popis": "Prodej bytu v Rousínově u Brna. Topení centrální plynové (kotel v domě), plovoucí podlahy a dlažba. Bytový dům i bytová jednotka je ve výborné kondici (kolaudace 2007).",
+   "foto": "/assets/img/prodano/3-kk-rousinov.jpg",
+   "stav": "Prodáno",
+   "typ": "Komerce a ostatní"
+  },
+  {
+   "nazev": "RD Sentice",
+   "popis": "RD Sentice. Pozemek 464m2. V rodinném domě započala rekonstrukce a nabízí ojedinělou zahradu u lesa.",
+   "foto": "/assets/img/prodano/rd-sentice-2.jpg",
+   "stav": "Prodáno",
+   "typ": "Domy"
+  },
+  {
+   "nazev": "3+1 Rajhrad",
+   "popis": "Dovolujeme si vám nabídnout exkluzivně k prodeji světlý byt v Rajhradě u Brna.",
+   "foto": "/assets/img/prodano/3-1-rajhrad.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "3+kk Mošnova, Brno",
+   "popis": "Dovolujeme si vám exkluzivně nabídnout pronájem nově zrekonstruovaného bytu o dispozici 3+kk a velikosti 50 m2 s terasou 14 m2 v Brně Židenicích na ulici Mošnova.",
+   "foto": "/assets/img/prodano/3-kk-mosnova-brno.jpg",
+   "stav": "Pronajato",
+   "typ": "Komerce a ostatní"
+  },
+  {
+   "nazev": "OV 3+1, Brno Lesná",
+   "popis": "Prodej bytu v osobním vlastnictví o dispozici 3+1 ve vyhledávané lokalitě Brno-Lesná.",
+   "foto": "/assets/img/prodano/ov-3-1-brno-lesna.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "Masážní salón, Praha-Libeň",
+   "popis": "Ve výhradním zastoupení nabízíme k prodeji obchodní prostor - masážní salon, který se nachází na ulici Kandertova, Praha Libeň.Nebytové prostory mají dispozice: zádveří, chodba, recepce, 2x masérna, komora a sociální zařízení. Podlaha dlažba, PVC a topení el.…",
+   "foto": "/assets/img/prodano/masazni-salon-praha-liben.jpg",
+   "stav": "Prodáno",
+   "typ": "Komerce a ostatní"
+  },
+  {
+   "nazev": "Pole Novosedly",
+   "popis": "Nabízím k prodeji zemědělský pozemek o výměře 17.973 m2 u obce Dobré pole v katastrálním území Novosedly okres Břeclav.",
+   "foto": "/assets/img/prodano/pole-novosedly.jpg",
+   "stav": "Prodáno",
+   "typ": "Pozemky"
+  },
+  {
+   "nazev": "OP Kellerův mlýn, Znojmo",
+   "popis": "Obchodní prostory o výměře 61 m2 se nachází v dokončovaném developerském projektu Kellerův mlýn u parku Žižkovo náměstí. Je možné přikoupit i dvougaráž, případně rozšířit o tuto dvougaráž komerční prostor. Jedná se tedy o další potenciální nebytové prostory…",
+   "foto": "/assets/img/prodano/op-kelleruv-mlyn-znojmo.jpg",
+   "stav": "Prodáno",
+   "typ": "Komerce a ostatní"
+  },
+  {
+   "nazev": "RD Syrovice",
+   "popis": "Vkusně vybudovaná zahrada s terasou a luxusním bazénem s automatickou regulaci PH a filtrací. Na zahradě je anglický trávník s automatickou závlahou, což je v létě velmi výhodné. Samotný dům je postavený s ohledem na všechny potřeby dnešního moderního člověka…",
+   "foto": "/assets/img/prodano/rd-syrovice.jpg",
+   "stav": "Prodáno",
+   "typ": "Domy"
+  },
+  {
+   "nazev": "Obchodní prostory Údolní, Brno",
+   "popis": "Světlé kancelářské prostory v dobrém stavu o velikosti 182 m2 se nachází ve 2. nadzemním podlaží pětipodlažního cihlového domu s výhledem do vnitrobloku a do zahrad pod Špilberkem s možností parkování.",
+   "foto": "/assets/img/prodano/obchodni-prostory-udolni-brno.jpg",
+   "stav": "Prodáno",
+   "typ": "Komerce a ostatní"
+  },
+  {
+   "nazev": "Mezonetový byt 3+kk, Sušilova, Brno",
+   "popis": "Krásný prostorný mezonetový byt 3+kk ve vyhledávané lokalitě Brno-Veveří, ulice Sušilova. Byt je situovaný v 6. patře bytového domu s novým výtahem a novou fasádou.",
+   "foto": "/assets/img/prodano/mezonetovy-byt-3-kk-susilova-brno.jpg",
+   "stav": "Prodáno",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "RD Žebětínek, Brno - Medlánky",
+   "popis": "Dům 4+1 v Brně Medlánkách. Rodinný dům je v okolní zástavbě situován jako krajový. Rodinný dům 4+1 s užitnou plochou 92 m2 je dvoupodlažní, není podsklepený a má k dispozici kuchyni, sociální zařízení a obývací pokoj v 1.NP a další tři pokoje se sociálním…",
+   "foto": "/assets/img/prodano/rd-zebetinek-brno-medlanky.jpg",
+   "stav": "Prodáno",
+   "typ": "Domy"
+  },
+  {
+   "nazev": "RD Plaveč",
+   "popis": "Historická stavba pocházející z roku 1568 má dva byty 3+1, garáž, chlévy i velkou stodolu, ale není památkově chráněna. Celý objekt byl postaven jako pivovar, později využíván jako hájenka. Přízemní a nepodsklepená budova se nachází kousek od Výrovické…",
+   "foto": "/assets/img/prodano/rd-plavec.jpg",
+   "stav": "Prodáno",
+   "typ": "Domy"
+  },
+  {
+   "nazev": "Komerční prostory 65 m2, Brno, Nový Lískovec",
+   "popis": "Obchodní prostory se nachází v 1.NP areálu Atrium v Brně – Novém Lískovci. Bezproblémové parkování. Nízké měsíční poplatky. V místě je plná občanská vybavenost včetně školy, školek, obchodů, ordinací lékařů, obchodní dům Albert, lékárna, kadeřnictví a dalších…",
+   "foto": "/assets/img/prodano/komercni-prostory-65-m2-brno-novy-liskovec.jpg",
+   "stav": "Prodáno za 78 dní",
+   "typ": "Komerce a ostatní"
+  },
+  {
+   "nazev": "Luxusní kancelář 42 m2 v centru Brna",
+   "popis": "Hledáte místo pro svou firmu v centru Brna s možností parkování a s klidnou rozlehlou zahradou? Ve výhradním zastoupení majitele si dovolujeme vám nabídnout k pronájmu luxusní kanceláře v nízkoenergetické budově nájemníkovi, který ocení netradiční prostředí v…",
+   "foto": "/assets/img/prodano/luxusni-kancelar-42-m2-v-centru-brna.jpg",
+   "stav": "Pronajato za 22 dní",
+   "typ": "Komerce a ostatní"
+  },
+  {
+   "nazev": "Světlý byt 1+kk s lodžií ul. Božetěchova",
+   "popis": "Dovolujeme si vám nabídnout pronájem bytu v novostavbě o dispozici 1+kk o celkové velikosti 26 m2 V Králově Poli na ulici Božetěchova v Brně. Nezařízený byt se nachází ve 3. patře s dvěma výtahy.",
+   "foto": "/assets/img/prodano/svetly-byt-1-kk-s-lodzii-ul-bozetechova.jpg",
+   "stav": "Pronajato za 14 dní",
+   "typ": "Byty"
+  },
+  {
+   "nazev": "Chata s pozemkem 408 m², Kanice",
+   "popis": "Ve výhradním zastoupení majitele nabízíme k prodeji chatu 48 m2 s pozemkem 408 m2 v obci Kanice u Brna. Chata stojí na vyvýšeném místě s nádherným výhledem do okolní krajiny, kterou lze pozorovat z balkónu v patře.",
+   "foto": "/assets/img/prodano/chata-s-pozemkem-408-m-kanice.jpg",
+   "stav": "Prodáno",
+   "typ": "Domy"
+  },
+  {
+   "nazev": "Kavárna v centru Brna",
+   "popis": "Pronájem kavárny 82m2 v centru Brna.",
+   "foto": "/assets/img/prodano/kavarna-v-centru-brna.jpg",
+   "stav": "Pronajato",
+   "typ": "Komerce a ostatní"
+  },
+  {
+   "nazev": "Pronájem RD Křetín",
+   "popis": "RD je momentálně vybaven nábytkem pro dvanáct osob (12), vhodný pro ubytování montážníků/dělníků. Krajní řadový rodinný dům je v klidné lokalitě obce Křetín, okres Blansko, nedaleko přehradní nádrže Křetínka, cca 6 km od Letovic.",
+   "foto": "/assets/img/prodano/pronajem-rd-kretin.jpg",
+   "stav": "Pronajato",
+   "typ": "Domy"
+  }
+ ]
+}
